@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlexibleToggle">
+            <connections>
+                <outlet property="btnToggle" destination="F2L-IG-SpE" id="xw9-uV-Tep"/>
+                <outlet property="btnToggleLeadingConstraint" destination="mx5-i2-yWr" id="kHG-eF-Dtr"/>
+                <outlet property="imgToggle" destination="qDu-Fh-aBn" id="ehk-1d-1e2"/>
+                <outlet property="lblToggleState" destination="dzs-8A-x6U" id="3zK-vw-8mW"/>
+                <outlet property="lblToggleStateCentreXConstraint" destination="2S1-9G-Rm8" id="7CF-jH-2wB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-Fh-aBn">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2L-IG-SpE">
+                    <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.18539676070213318" green="0.78548747301101685" blue="0.55696207284927368" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="VZw-SU-FPj"/>
+                        <constraint firstAttribute="width" secondItem="F2L-IG-SpE" secondAttribute="height" multiplier="1:1" id="fbW-K7-yp8"/>
+                        <constraint firstAttribute="width" constant="30" id="yxL-if-qvf"/>
+                    </constraints>
+                    <connections>
+                        <action selector="buttonToggle:" destination="-1" eventType="touchUpInside" id="7zk-2l-ZW7"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-8A-x6U">
+                    <rect key="frame" x="30" y="0.0" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="oHD-Ha-N3S"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dzs-8A-x6U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2S1-9G-Rm8"/>
+                <constraint firstAttribute="bottom" secondItem="dzs-8A-x6U" secondAttribute="bottom" id="BjK-9D-Nqw"/>
+                <constraint firstItem="F2L-IG-SpE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O9R-SJ-02f"/>
+                <constraint firstItem="qDu-Fh-aBn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ua8-Tz-8hG"/>
+                <constraint firstItem="dzs-8A-x6U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aSP-zm-fCU"/>
+                <constraint firstAttribute="trailing" secondItem="qDu-Fh-aBn" secondAttribute="trailing" id="eIl-kE-s1D"/>
+                <constraint firstItem="F2L-IG-SpE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="mx5-i2-yWr"/>
+                <constraint firstAttribute="bottom" secondItem="qDu-Fh-aBn" secondAttribute="bottom" id="pT4-7Q-Iar"/>
+                <constraint firstItem="qDu-Fh-aBn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yMf-7z-rnB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="500" y="173"/>
+        </view>
+    </objects>
+</document>

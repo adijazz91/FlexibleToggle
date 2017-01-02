@@ -13,6 +13,8 @@
 		4890A6D71E1A59310063B821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4890A6D51E1A59310063B821 /* Main.storyboard */; };
 		4890A6D91E1A59310063B821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4890A6D81E1A59310063B821 /* Assets.xcassets */; };
 		4890A6DC1E1A59310063B821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4890A6DA1E1A59310063B821 /* LaunchScreen.storyboard */; };
+		4890A6E71E1A59870063B821 /* FlexibleToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890A6E51E1A59870063B821 /* FlexibleToggle.m */; };
+		4890A6E81E1A59870063B821 /* FlexibleToggle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890A6E61E1A59870063B821 /* FlexibleToggle.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		4890A6D81E1A59310063B821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4890A6DB1E1A59310063B821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4890A6DD1E1A59310063B821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4890A6E41E1A59870063B821 /* FlexibleToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleToggle.h; sourceTree = "<group>"; };
+		4890A6E51E1A59870063B821 /* FlexibleToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleToggle.m; sourceTree = "<group>"; };
+		4890A6E61E1A59870063B821 /* FlexibleToggle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlexibleToggle.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 				4890A6D01E1A59310063B821 /* AppDelegate.m */,
 				4890A6D21E1A59310063B821 /* ViewController.h */,
 				4890A6D31E1A59310063B821 /* ViewController.m */,
+				4890A6E31E1A59870063B821 /* FlexibleToggle */,
 				4890A6D51E1A59310063B821 /* Main.storyboard */,
 				4890A6D81E1A59310063B821 /* Assets.xcassets */,
 				4890A6DA1E1A59310063B821 /* LaunchScreen.storyboard */,
@@ -77,6 +83,16 @@
 				4890A6CD1E1A59300063B821 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4890A6E31E1A59870063B821 /* FlexibleToggle */ = {
+			isa = PBXGroup;
+			children = (
+				4890A6E41E1A59870063B821 /* FlexibleToggle.h */,
+				4890A6E51E1A59870063B821 /* FlexibleToggle.m */,
+				4890A6E61E1A59870063B821 /* FlexibleToggle.xib */,
+			);
+			path = FlexibleToggle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4890A6E81E1A59870063B821 /* FlexibleToggle.xib in Resources */,
 				4890A6DC1E1A59310063B821 /* LaunchScreen.storyboard in Resources */,
 				4890A6D91E1A59310063B821 /* Assets.xcassets in Resources */,
 				4890A6D71E1A59310063B821 /* Main.storyboard in Resources */,
@@ -149,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4890A6E71E1A59870063B821 /* FlexibleToggle.m in Sources */,
 				4890A6D41E1A59310063B821 /* ViewController.m in Sources */,
 				4890A6D11E1A59310063B821 /* AppDelegate.m in Sources */,
 				4890A6CE1E1A59300063B821 /* main.m in Sources */,
@@ -267,7 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fs..Toggle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap.Toggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -278,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Toggle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fs..Toggle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap.Toggle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
